@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Formuario 1</H1>
+    <form method="post">
+        <fieldset>
+            <legend>Datos de la incidencia:</legend>
+             <label for="Nombre_usuario">Usuario:</label>
+             <br>
+             <input type="text" name="usuario" id="Nombre_usuario">
+             <br><br>
+             <label for="Nombre_departamento">Departamento:</label>
+             <br>
+             <select name="departamentos" id="Departamentos">
+                <option value="Informatica">Informática</option>
+                <option value="ventas">Ventas</option>
+                <option value="marketing">Marketing</option>
+                
+              </select>
+              <br><br>
+              <label for="descripcion_incidencia">Incidencia:</label>
+              <br>
+              <textarea id="descripcion_incidencia" placeholder="Describa la incidencia..." name="Incidencia" rows="4" cols="50"></textarea>
+            
+              <br><br>
+              <label for="contraseña">Contraseña:</label>
+              <br>
+              <input type="password" name="Contraseña" id="contraseña">
+        </fieldset>
+   
+        <fieldset method="post">
+            <legend>Botones de reset y envío:</legend>
+                <button type="button" onclick="reseteado">Reset</button>
+                <button type="button" onclick="enviado">Enviar</button>
+        </fieldset>
+
+    </form>
+    <H1>Formuario 2</H1>
+    <form action="">
+        <fieldset>
+            <legend>Datos fiscales:</legend>
+            
+                <input type="radio" id="paro" name="En paro">
+                <label for="radio">En paro</label><br>
+                <input type="radio" id="autonomo" name="Autónomo" value="autonomo">
+                <label for="radio">Cuenta ajena</label><br>
+                <input type="radio" id="ajena" name="Cuenta ajena" value="ajena">
+                <label for="radio">JavaScript</label><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos personales:</legend>
+                <label for="Nombre">Nombre:</label>
+                <br>
+                <input type="text" name="Apellidos" id="apellidos">
+                <br>
+                <label for="apellidos">Apellidos:</label>
+                <br>
+                <input type="text" name="Apellidos" id="apellidos">
+                <p>Sueldo:</p>
+            </fieldset>
+
+
+        </form>    
+</body>
+</html>
